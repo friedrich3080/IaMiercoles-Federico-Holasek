@@ -5,7 +5,7 @@ from groq import Groq
 st.set_page_config(page_title="Mi chat de IA", page_icon=":thumbsup:")
 st.title("Mi primera aplicacion con Streamlit")
 
-nombre = st.text_input(Eu como te llamas?")
+nombre = st.text_input("Eu como te llamas?")
 if st.button("Saludar!"):
     st.write(f"Hola {nombre}! Bienvenido a mi chat piola")
 
@@ -87,4 +87,5 @@ if __name__== "__main__":
 
 
    
+
 
