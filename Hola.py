@@ -2,11 +2,11 @@
 import streamlit as st
 from groq import Groq
 
-st.set_page_config(page_title="Mi chat de IA", page_icon=":thumbsup:")
-st.title("Mi primera aplicacion con Streamlit")
+st.set_page_config(page_title="Mi chat de IA buenisimoooo", page_icon=":thumbsup:")
+st.title("Mi primera vez programando")
 
 nombre = st.text_input("Eu como te llamas?")
-if st.button("Saludar!"):
+if st.button("Saludame che"):
     st.write(f"Hola {nombre}! Bienvenido a mi chat piola")
 
 MODELOS = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile']
@@ -87,5 +87,6 @@ if __name__== "__main__":
 
 
    
+
 
 
