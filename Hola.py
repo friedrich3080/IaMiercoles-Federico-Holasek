@@ -5,14 +5,14 @@ from groq import Groq
 st.set_page_config(page_title="Mi chat de IA", page_icon=":thumbsup:")
 st.title("Mi primera aplicacion con Streamlit")
 
-nombre = st.text_input("Cual es tu nombre?")
+nombre = st.text_input(Eu como te llamas?")
 if st.button("Saludar!"):
-    st.write(f"Hola {nombre}! Bienvenido a talento tech")
+    st.write(f"Hola {nombre}! Bienvenido a mi chat piola")
 
 MODELOS = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile']
 
 def configurar_pagina():
-    st.title("Mi Chat de IA - Janneth")
+    st.title("Mi Chat de IA - Federicooo")
     st.sidebar.title("Configuracion de la IA")
 
     elegirModelo = st.sidebar.selectbox(
@@ -65,7 +65,7 @@ def main ():
     inicializar_estado()
     modelo = configurar_pagina()
     area_chat() #Nuevo 
-    mensaje = st.chat_input("Escribi tu mensaje:")
+    mensaje = st.chat_input("Escribime tu mensaje:")
 
     if mensaje:
         actualizar_historial("user", mensaje, "😎")
@@ -87,3 +87,4 @@ if __name__== "__main__":
 
 
    
+
